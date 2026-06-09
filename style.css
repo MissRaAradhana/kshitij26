@@ -101,7 +101,7 @@ body {
     border-radius: 12px;
 
     box-shadow:
-        0 4px 10px rgba(49, 6, 204, 0.5);
+        0 4px 10px rgba(125, 6, 204, 0.5);
 
     transition: all 0.3s ease;
 }
@@ -159,17 +159,6 @@ body {
     border-radius: 8px;
 
     padding: 8px 12px;
-}
-.contactform input:focus,
-.contactform textarea:focus {
-
-    border-color: #ba3aed;
-
-    background: rgba(186, 58, 237, 0.15);
-
-    box-shadow:
-        0 0 10px rgba(186, 58, 237, 0.5),
-        0 0 25px rgba(186, 58, 237, 0.25);
 }
 .navbar {
     position: fixed;
@@ -322,23 +311,124 @@ html {
     scroll-behavior: smooth;
 }
 .contactform {
-    background: rgba(255, 255, 255, 0.08);
+    background: rgba(15, 10, 35, 0.75);
+
+    border: 1px solid rgba(139, 61, 255, 0.35);
+
+    border-radius: 22px;
+
+    padding: 45px 50px;
+
+    width: 90%;
+    max-width: 900px;
+
+    margin: 40px auto;
 
     backdrop-filter: blur(15px);
 
-    padding: 30px;
-
-    border: 1px solid rgba(186, 58, 237, 0.25);
-
-    border-radius: 20px;
-
-    transition: all 0.3s ease;
-
     box-shadow:
-        0 10px 30px rgba(49, 6, 204, 0.25),
-        inset 0 0 20px rgba(186, 58, 237, 0.08);
+        0 0 30px rgba(139,61,255,0.15),
+        inset 0 0 20px rgba(255,255,255,0.03);
+
+    transition: 0.3s ease;
 }
 
+#c {
+    color: #f5eaff;
+
+    font-size: 2.5rem;
+    margin-bottom: 8px;
+
+    text-shadow:
+        0 0 20px rgba(186,58,237,0.6);
+}
+
+
+.contactform p {
+    color: #a99ac9;
+    margin-bottom: 35px;
+}
+
+.contactform input,
+.contactform textarea {
+
+    width: 100%;
+
+    background: rgba(0,0,0,0.35);
+
+    border: 1px solid rgba(139,61,255,0.25);
+
+    border-radius: 12px;
+
+    padding: 15px 18px;
+
+    color: white;
+
+    font-size: 15px;
+
+    outline: none;
+
+    margin-bottom: 20px;
+
+    transition: 0.3s ease;
+}
+.contactform input:focus,
+.contactform textarea:focus {
+
+    border-color: #8b3dff;
+
+    box-shadow:
+        0 0 15px rgba(139,61,255,0.5);
+
+    background: rgba(139,61,255,0.08);
+}
+
+
+
+.contactform textarea {
+    min-height: 140px;
+    resize: none;
+}
+
+
+.contactform button {
+
+    width: 100%;
+
+    padding: 15px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    background:
+    linear-gradient(
+        90deg,
+        #4b00c8,
+        #9b59ff
+    );
+
+    color: white;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+
+    box-shadow:
+        0 0 25px rgba(139,61,255,0.4);
+}
+
+
+
+.contactform button:hover {
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 0 35px rgba(139,61,255,0.7);
+}
 
 .contactform:hover {
     transform: translateY(-5px);
@@ -401,8 +491,6 @@ html {
         0 0 10px rgba(155,125,243,0.6);
 }
 
-
-/* Main projects heading */
 #p {
     margin-bottom: 25px;
 
@@ -462,23 +550,23 @@ section {
     margin: 35px 0;
 }
 html:has(#theme-toggle:checked) {
-    /* Background */
+   
     --bg-1: #faf7ff;
     --bg-2: #f1e8ff;
     --bg-3: #e6d8ff;
 
-    /* Text */
+    
     --text: #35224f;
 
-    /* Cards */
+    
     --card: rgba(255,255,255,0.85);
     --card-border: rgba(139, 61, 255, 0.2);
 
-    /* Toggle */
+    
     --toggle-bg: #6c2cff;
     --toggle-circle: #ffffff;
 
-    /* Accent */
+    
     --accent: #8b3dff;
 }
 html:has(#theme-toggle:checked) body {
@@ -580,6 +668,13 @@ footer {
         padding-left: 15px;
         padding-right: 15px;
     }
+     .hero-subtitle::before,
+    .hero-subtitle::after {
+        width: 25px;       
+        height: 1px;
+
+        margin: 0 8px;   
+    }
 
 
     .hero h1 {
@@ -625,8 +720,6 @@ footer {
         height: 30px;
     }
 
-
-    /* Cards fit screen */
     .card,
     .contactform {
         width: 100%;
