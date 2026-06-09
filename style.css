@@ -548,6 +548,7 @@ html {
 }
 section {
     margin: 35px 0;
+    padding: 10px;
 }
 html:has(#theme-toggle:checked) {
    
