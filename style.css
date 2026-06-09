@@ -834,3 +834,60 @@ html:has(#theme-toggle:checked) .card p {
 
     line-height: 1.7;
 }
+.about-card {
+    max-width: 900px;
+    margin: 30px auto;
+
+    padding: 40px;
+
+    background: var(--card);
+    border: 1px solid var(--card-border);
+    border-radius: 20px;
+
+    backdrop-filter: blur(12px);
+
+    box-shadow:
+        0 10px 30px rgba(125, 6, 204, 0.2);
+
+    transition: all 0.3s ease;
+}
+
+.about-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 0 15px rgba(186, 58, 237, 0.3),
+        0 0 30px rgba(186, 58, 237, 0.15);
+}
+
+.about-card p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+
+    color: var(--text);
+
+    text-align: left;
+}
+
+.about-card span {
+    color: #d0a6ff;
+    font-weight: 700;
+
+    text-shadow:
+        0 0 10px rgba(186, 58, 237, 0.4);
+}
+.section-subtitle {
+    text-align: center;
+
+    margin-top: 60px;
+    margin-bottom: 25px;
+
+    font-size: 1.2rem;
+    letter-spacing: 6px;
+
+    color: #d0a6ff;
+
+    text-shadow:
+        0 0 10px rgba(186, 58, 237, 0.5),
+        0 0 20px rgba(186, 58, 237, 0.3);
+}
